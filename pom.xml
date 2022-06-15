@@ -38,6 +38,7 @@
 		<sonar.java.plugin.version>6.15.1.26025</sonar.java.plugin.version>
 		<sonar.plugin-api.version>8.9.7.52159</sonar.plugin-api.version>
 		<sonar.sslr.version>1.24.0.633</sonar.sslr.version>
+		<guava.version>29.0-jre</guava.version>
 	</properties>
 
 	<dependencyManagement>
@@ -118,8 +119,7 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>29.0-jre</version>
-			<scope>provided</scope>
+			<version>${guava.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -174,7 +174,7 @@
 								<artifactItem>
 									<groupId>com.google.guava</groupId>
 									<artifactId>guava</artifactId>
-									<version>29.0-jre</version>
+									<version>${guava.version}</version>
 									<type>jar</type>
 								</artifactItem>
 							</artifactItems>
